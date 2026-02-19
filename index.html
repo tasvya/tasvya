@@ -1,50 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tasvya Atelier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasvya</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .gold { background-color: gold; }
-        nav { margin: 20px 0; }
-        .contact-link { margin: 20px 0; }
+        body {
+            background-color: #FFCC99; /* Pastel orange */
+            font-family: Arial, sans-serif;
+        }
+        #logo {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 50px auto;
+            background: url('logo.png') no-repeat center center; 
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #333;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        .tabs li {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        .content {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dress-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+        }
     </style>
 </head>
 <body>
-    <div class="gold">
-        <h1>Tasvya Atelier</h1>
-        <h2>Kids Couture, Crafted to make every little one exceptional</h2>
-    </div>
-    <nav>
-        <a href="#collections">Collections</a> | 
-        <a href="#about">About</a> | 
-        <a href="#contact">Contact</a>
-    </nav>
 
-    <div id="collections">
-        <h1>Collections</h1>
-        <ul>
-            <li>Dress 1</li>
-            <li>Dress 2</li>
-            <li>Dress 3</li>
-            <li>Dress 4</li>
-            <li>Dress 5</li>
-            <li>Dress 6</li>
-            <li>Dress 7</li>
-            <li>Dress 8</li>
-            <li>Dress 9</li>
-            <li>Dress 10</li>
-        </ul>
+    <div id="logo"></div>
+    <h1>Tasvya</h1>
+    <ul class="tabs">
+        <li onclick="showTab('home')">Tasvya</li>
+        <li onclick="showTab('kids')">Kids Couture</li>
+        <li onclick="showTab('collections')">Collections</li>
+        <li onclick="showTab('about')">About</li>
+        <li onclick="showTab('contact')">Contact</li>
+    </ul>
+
+    <div class="content" id="home">
+        <p>Welcome to Tasvya!</p>
     </div>
 
-    <div id="about" class="gold">
-        <h1>About Us</h1>
-        <p>About Tasvya Atelier...</p>
+    <div class="content" id="kids" style="display:none;">
+        <p>Explore our Kids Couture collection!</p>
     </div>
 
-    <div id="contact">
-        <h1>Contact Us</h1>
-        <img src="QR-code-image-url" alt="Instagram QR Code" />
-        <p class="contact-link">WhatsApp us at: <a href="https://wa.me/917989727695">+91 7989727695</a> for orders!</p>
+    <div class="content" id="collections" style="display:none;">
+        <div class="dress-card">
+            <img src="dress1.jpg" alt="Dress 1" style="width:100%;">
+            <h3>Dress 1</h3>
+            <p>Description of Dress 1</p>
+            <p>Price: $100</p>
+            <button>Order</button>
+            <button onclick="window.open('https://wa.me/your_whatsapp_number', '_blank');">WhatsApp</button>
+        </div>
+        <div class="dress-card">
+            <img src="dress2.jpg" alt="Dress 2" style="width:100%;">
+            <h3>Dress 2</h3>
+            <p>Description of Dress 2</p>
+            <p>Price: $120</p>
+            <button>Order</button>
+            <button onclick="window.open('https://wa.me/your_whatsapp_number', '_blank');">WhatsApp</button>
+        </div>
     </div>
+
+    <div class="content" id="about" style="display:none;">
+        <p>Learn more about us!</p>
+    </div>
+
+    <div class="content" id="contact" style="display:none;">
+        <p>Contact us for inquiries!</p>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+            document.getElementById(tabName).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
