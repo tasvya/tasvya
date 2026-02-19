@@ -8,13 +8,15 @@
         body {
             background-color: #F5E6C8; /* champagne Gold */
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 10px;
         }
         #logo {
             border-radius: 50%;
             width: 200px;
             height: 200px;
             display: block;
-            margin: 20px auto 10px auto;
+            margin: 10px auto;
             background: url('logo.png') no-repeat center center; 
             background-size: cover;
         }
@@ -22,12 +24,14 @@
             text-align: center;
             font-size: 3em;
             color: #333;
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
         .tabs {
             display: flex;
             justify-content: center;
             list-style-type: none;
-            margin-top: 10px;
+            margin-top: 5px;
             margin-bottom: 0;
             padding: 0;
         }
@@ -55,6 +59,7 @@
 </head>
 <body>
 
+<div class = "header">
     <div id="logo"></div>
     <h1>Tasvya</h1>
     <ul class="tabs">
@@ -64,6 +69,7 @@
         <li onclick="showTab('about')">About</li>
         <li onclick="showTab('contact')">Contact</li>
     </ul>
+</div>
 
     <div class="content" id="home">
         <p>Welcome to Tasvya!</p>
