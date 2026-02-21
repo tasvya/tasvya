@@ -98,10 +98,76 @@ nav ul li a:hover {
 .btn:hover {
     background-color: #a67c52;
 }
-/* About Page Layout */
-/* FORCE CHAMPAGNE BACKGROUND */
+.about-hero {
+    background-color: #f3e5c8 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    gap: 60px;
+}
+
+.about-left {
+    flex: 1;
+    max-width: 550px;
+}
+
+.about-left h1 {
+    font-size: 48px;
+    color: #2f4f3f;
+    margin-bottom: 25px;
+}
+
+.about-left p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 35px;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #c9a26d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+}
+/* Responsive */
 /* MOBILE VERSION */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 22px;
+    }
+
+    /* about */
     .about-hero {
         flex-direction: column;
         padding: 60px 25px;
