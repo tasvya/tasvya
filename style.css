@@ -111,7 +111,10 @@ nav ul li a:hover {
 
     .hero {
         height: 85vh;
-        background-position: center center;
+        background-image: url('images/hero1.jpg');
+        background-size: cover;
+        background-position: 75% center;
+        background-repeat: no-repeat;
         padding-left: 20px;
         padding-right: 20px;
         text-align: center;
