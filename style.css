@@ -99,40 +99,44 @@ nav ul li a:hover {
     background-color: #a67c52;
 }
 /* About Page Layout */
+/* Champagne Gold Background */
 .about-hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 80px;
-    background-color: #f4eee6;
+    padding: 80px 60px;
+    background: linear-gradient(135deg, #f6e7c1, #e8d3a3);
     gap: 60px;
 }
 
+/* Left Text */
 .about-left {
     flex: 1;
+    max-width: 550px;
 }
 
 .about-left h1 {
-    font-size: 60px;
+    font-size: 48px;
     color: #2f4f3f;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .about-left p {
-    font-size: 24px;
-    line-height: 1.9;
-    color: #444;
-    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3a3a3a;
+    margin-bottom: 35px;
 }
 
+/* Button */
 .about-btn {
     display: inline-block;
-    padding: 18px 40px;
+    padding: 14px 32px;
     background-color: #c9a26d;
     color: white;
     text-decoration: none;
-    font-size: 20px;
-    border-radius: 8px;
+    font-size: 18px;
+    border-radius: 6px;
     transition: 0.3s ease;
 }
 
@@ -140,14 +144,17 @@ nav ul li a:hover {
     background-color: #a67c52;
 }
 
+/* Right Image */
 .about-right {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .about-right img {
     width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
+    max-width: 420px;
+    border-radius: 12px;
 }
 
 /* Responsive */
@@ -173,20 +180,19 @@ nav ul li a:hover {
 
     /* about */
     .about-hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 20px;
+        padding: 40px 20px;
+        gap: 20px;
     }
 
     .about-left h1 {
-        font-size: 42px;
+        font-size: 26px;
     }
 
     .about-left p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .about-right img {
-        margin-top: 40px;
+        max-width: 200px;
     }
 }
