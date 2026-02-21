@@ -192,8 +192,26 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 6px;
 }
+/* instagram */
+.social-section {
+    margin-top: 35px;
+}
 
+.social-section h4 {
+    margin-bottom: 10px;
+}
 
+.instagram-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #2f4f3f;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.instagram-link:hover {
+    color: #c9a26d;
+}
 /* FORM CARD */
 
 .contact-form {
