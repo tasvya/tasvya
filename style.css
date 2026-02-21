@@ -99,17 +99,16 @@ nav ul li a:hover {
     background-color: #a67c52;
 }
 /* About Page Layout */
-/* Champagne Gold Background */
+/* FORCE CHAMPAGNE BACKGROUND */
 .about-hero {
+    background-color: #f3e5c8 !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 80px 60px;
-    background: linear-gradient(135deg, #f6e7c1, #e8d3a3);
     gap: 60px;
 }
 
-/* Left Text */
 .about-left {
     flex: 1;
     max-width: 550px;
@@ -124,27 +123,19 @@ nav ul li a:hover {
 .about-left p {
     font-size: 18px;
     line-height: 1.8;
-    color: #3a3a3a;
+    color: #333;
     margin-bottom: 35px;
 }
 
-/* Button */
 .about-btn {
     display: inline-block;
     padding: 14px 32px;
     background-color: #c9a26d;
     color: white;
     text-decoration: none;
-    font-size: 18px;
     border-radius: 6px;
-    transition: 0.3s ease;
 }
 
-.about-btn:hover {
-    background-color: #a67c52;
-}
-
-/* Right Image */
 .about-right {
     flex: 1;
     display: flex;
@@ -156,7 +147,6 @@ nav ul li a:hover {
     max-width: 420px;
     border-radius: 12px;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
     header {
