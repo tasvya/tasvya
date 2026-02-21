@@ -98,6 +98,57 @@ nav ul li a:hover {
 .btn:hover {
     background-color: #a67c52;
 }
+/* About Page Layout */
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 80px;
+    background-color: #f4eee6;
+    gap: 60px;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left h1 {
+    font-size: 60px;
+    color: #2f4f3f;
+    margin-bottom: 30px;
+}
+
+.about-left p {
+    font-size: 24px;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    background-color: #c9a26d;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #a67c52;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -118,5 +169,24 @@ nav ul li a:hover {
 
     .hero-content p {
         font-size: 22px;
+    }
+
+    /* about */
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .about-left h1 {
+        font-size: 42px;
+    }
+
+    .about-left p {
+        font-size: 18px;
+    }
+
+    .about-right img {
+        margin-top: 40px;
     }
 }
