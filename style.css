@@ -170,19 +170,22 @@ nav ul li a:hover {
 
     /* about */
     .about-hero {
-        padding: 40px 20px;
-        gap: 20px;
+        flex-direction: column;
+        padding: 50px 25px;
+        text-align: center;
     }
 
-    .about-left h1 {
-        font-size: 26px;
+    .about-left {
+        max-width: 100%;
     }
 
-    .about-left p {
-        font-size: 14px;
+    .about-right {
+        margin-top: 30px;
     }
 
     .about-right img {
-        max-width: 200px;
+        max-width: 100%;
     }
+
+}
 }
