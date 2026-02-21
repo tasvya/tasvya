@@ -2,109 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>TASVYA | Kids Couture</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasvya</title>
-    <style>
-        body {
-            background-color: #F5E6C8; /* champagne Gold */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding-top: 0;
-        }
-        #logo {
-            border-radius: 50%;
-            width: 10px;
-            height: 10px;
-            margin: 10px auto 5px auto;
-            background: url('logo.png') no-repeat center center; 
-            background-size: cover;
-        }
-        h1 {
-            text-align: center;
-            font-size: 3em;
-            color: #333;
-            margin: 10px 0;
-        }
-        .tabs {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            margin-top: 5px;
-            margin-bottom: 0;
-            padding: 0;
-        }
-        .tabs li {
-            margin: 0 15px;
-            cursor: pointer;
-            font-weight: 500;
-        }
-        .tabs li:hover {
-            color: #000;
-        }
-        .content {
-            margin-top: 10px;
-            text-align: center;
-        }
-        .dress-card {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 10px;
-            display: inline-block;
-            width: 200px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="logo"></div>
-    <h1>Tasvya</h1>
-    <ul class="tabs">
-        <li onclick="showTab('home')">Home</li>
-        <li onclick="showTab('collections')">Collections</li>
-        <li onclick="showTab('about')">About</li>
-        <li onclick="showTab('contact')">Contact</li>
-    </ul>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">TASVYA</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="content" id="home">
-        <p>Welcome to Tasvya!</p>
-    </div>
-
-    <div class="content" id="collections" style="display:none;">
-        <div class="dress-card">
-            <img src="dress1.jpg" alt="Dress 1" style="width:100%;">
-            <h3>Dress 1</h3>
-            <p>Description of Dress 1</p>
-            <p>Price: $100</p>
-            <button>Order</button>
-            <button onclick="window.open('https://wa.me/7989727695', '_blank');">WhatsApp</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TASVYA</h1>
+            <h3>Kids Couture</h3>
+            <p>Every Little One Deserves a Rich Feel</p>
+            <a href="#" class="btn">Shop Collection</a>
         </div>
-        <div class="dress-card">
-            <img src="dress2.jpg" alt="Dress 2" style="width:100%;">
-            <h3>Dress 2</h3>
-            <p>Description of Dress 2</p>
-            <p>Price: $120</p>
-            <button>Order</button>
-            <button onclick="window.open('https://wa.me/your_whatsapp_number', '_blank');">WhatsApp</button>
-        </div>
-    </div>
+    </section>
 
-    <div class="content" id="about" style="display:none;">
-        <p>Learn more about us!</p>
-    </div>
-
-    <div class="content" id="contact" style="display:none;">
-        <p>Contact us for inquiries!</p>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-            const contents = document.querySelectorAll('.content');
-            contents.forEach(content => {
-                content.style.display = 'none';
-            });
-            document.getElementById(tabName).style.display = 'block';
-        }
-    </script>
 </body>
 </html>
