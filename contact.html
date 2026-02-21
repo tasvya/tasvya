@@ -54,8 +54,7 @@
         <input type="text" placeholder="Phone">
         <textarea placeholder="Message"></textarea>
 
-        <button class="primary-btn">Send Message</button>
-        <button class="secondary-btn">Custom Order Enquiry</button>
+        <button type="button" class="primary-btn" onclick="sendToWhatsApp()">Send Message</button>
     </div>
 
 
@@ -65,6 +64,27 @@
     </div>
 
 </section>
+<script>
+function sendToWhatsApp() {
 
+    var name = document.querySelector('input[placeholder="Name"]').value;
+    var email = document.querySelector('input[placeholder="Email"]').value;
+    var phone = document.querySelector('input[placeholder="Phone"]').value;
+    var message = document.querySelector('textarea').value;
+
+    var whatsappNumber = "917989727695"; // without + sign
+
+    var fullMessage =
+        "Hello TASVYA,%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Email: " + email + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Message: " + message;
+
+    var url = "https://wa.me/" + whatsappNumber + "?text=" + fullMessage;
+
+    window.open(url, "_blank");
+}
+</script>
 </body>
 </html>
