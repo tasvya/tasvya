@@ -202,15 +202,29 @@ nav ul li a:hover {
 }
 
 .instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 30px;
     text-decoration: none;
-    font-size: 16px;
-    color: #2f4f3f;
-    font-weight: 500;
-    transition: 0.3s;
+    font-weight: 600;
+    font-size: 15px;
+    color: #000;
+    background-color: #f5f0e8; /* champagne base */
+    border: 1px solid #e5d6c5;
+    transition: all 0.3s ease;
 }
 
 .instagram-link:hover {
-    color: #c9a26d;
+    background-color: #c9a26d; /* soft gold */
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.instagram-icon {
+    width: 20px;
+    height: 20px;
 }
 /* FORM CARD */
 
